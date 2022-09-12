@@ -6,11 +6,11 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     private PlayerInput PlayerInput; 
-    private PlayerInput.OnFootActions onFoot;
+    public PlayerInput.OnFootActions onFoot;
 
     private PlayerMotor motor;
     private PlayerLook look;
-    // Start is called before the first frame update
+    // This is the PlayerInput for movement.
     void Awake()
     {
         PlayerInput = new PlayerInput();

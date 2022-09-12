@@ -1,5 +1,5 @@
 {
-    "name": "PlayerInput",
+    "name": "Playerinput",
     "maps": [
         {
             "name": "OnFoot",
@@ -33,21 +33,21 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Crouch",
-                    "type": "Button",
-                    "id": "9a3e0285-3d5b-4609-b9aa-82780f0b9572",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Sprint",
                     "type": "Button",
                     "id": "435cb264-ca45-41d9-bfb1-cab333ddde99",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "9a3e0285-3d5b-4609-b9aa-82780f0b9572",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": false
                 }
             ],
@@ -208,28 +208,6 @@
                 },
                 {
                     "name": "",
-                    "id": "fd3580cf-48e0-465e-ba19-e4c67805029e",
-                    "path": "<Keyboard>/leftCtrl",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7fe6c33e-59ef-4a94-9081-2a36c6d2a704",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "100df697-a359-4411-93b1-694e5a29c935",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -247,6 +225,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd3580cf-48e0-465e-ba19-e4c67805029e",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7fe6c33e-59ef-4a94-9081-2a36c6d2a704",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
