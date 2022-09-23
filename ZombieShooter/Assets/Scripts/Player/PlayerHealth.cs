@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHeatlh : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     private float health;
     private float lerpTimer;
@@ -31,6 +31,17 @@ public class PlayerHeatlh : MonoBehaviour
     public void UpdateHealthUI()
     {
         Debug.Log(health);
+        float fillF = frontHealthBar.fillAmount;
+        float fillB = backHealthBar.fillAmount;
+        float hFraction = health / maxHealth;
+        if(fillB > hFraction)
+        {
+            frontHealthBar.fillAmount = hFraction;
+            backHealthBar.color = Color.red;
+            lerpTimer += Time.deltaTime;
+            float percentComplete = lerpTimer / chipSpeed;
+            backHealthBar.fillAmount = Mathf.Lerp(fillB, hFraction, percentComplete);
+        }
     }
 
     public void TakeDamage(float damage)
