@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class Playerhealth : MonoBehaviour
 {
     private float health;
     private float lerpTimer;
@@ -23,9 +23,13 @@ public class PlayerHealth : MonoBehaviour
     {
         health = Mathf.Clamp(health, 0, maxHealth);
         UpdateHealthUI();
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Input.GetKeyDown(KeyCode.F))
         {
             TakeDamage(Random.Range(5, 10));
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            RestoreHealth(Random.Range(5, 10));
         }
     }
     public void UpdateHealthUI()
@@ -40,13 +44,29 @@ public class PlayerHealth : MonoBehaviour
             backHealthBar.color = Color.red;
             lerpTimer += Time.deltaTime;
             float percentComplete = lerpTimer / chipSpeed;
+            percentComplete = percentComplete * percentComplete;
             backHealthBar.fillAmount = Mathf.Lerp(fillB, hFraction, percentComplete);
+        }
+        if(fillF < hFraction)
+        {
+            backHealthBar.color = Color.green;
+            backHealthBar.fillAmount = hFraction;
+            lerpTimer += Time.deltaTime;
+            float percentComplete = lerpTimer / chipSpeed;
+            percentComplete = percentComplete * percentComplete;
+            frontHealthBar.fillAmount = Mathf.Lerp(fillF, backHealthBar.fillAmount, percentComplete);
+
         }
     }
 
     public void TakeDamage(float damage)
     {
         health -= damage;
+        lerpTimer = 0f;
+    }
+    public void RestoreHealth(float healAmount)
+    {
+        health += healAmount;
         lerpTimer = 0f;
     }
 }

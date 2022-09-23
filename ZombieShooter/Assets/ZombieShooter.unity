@@ -617,8 +617,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 201.37372, y: 60.538605}
-  m_SizeDelta: {x: 213.6413, y: 33.6228}
+  m_AnchoredPosition: {x: 267.69568, y: 77.50333}
+  m_SizeDelta: {x: 290.1039, y: 45.6565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279894301
 MonoBehaviour:
@@ -903,8 +903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 201.37372, y: 60.538605}
-  m_SizeDelta: {x: 213.6413, y: 33.6228}
+  m_AnchoredPosition: {x: 267.69568, y: 77.50333}
+  m_SizeDelta: {x: 290.1039, y: 45.6565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833776497
 MonoBehaviour:
@@ -1221,8 +1221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 162, y: 57}
-  m_SizeDelta: {x: 291.8678, y: 87.7237}
+  m_AnchoredPosition: {x: 214.23004, y: 72.69824}
+  m_SizeDelta: {x: 396.3279, y: 119.1202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215677740
 MonoBehaviour:
@@ -1724,8 +1724,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 201.37372, y: 60.538605}
-  m_SizeDelta: {x: 213.6413, y: 33.6228}
+  m_AnchoredPosition: {x: 267.69568, y: 77.50333}
+  m_SizeDelta: {x: 290.1039, y: 45.6565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564054801
 MonoBehaviour:
@@ -2134,7 +2134,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2298,3 +2298,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promtpText: {fileID: 269453472}
+--- !u!114 &7533013354274335795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533013354274335781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6616d5642bf264b8721620fdf2f9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  chipSpeed: 2
+  frontHealthBar: {fileID: 833776497}
+  backHealthBar: {fileID: 279894301}
